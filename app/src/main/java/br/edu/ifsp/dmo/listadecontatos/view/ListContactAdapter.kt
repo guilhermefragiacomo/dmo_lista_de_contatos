@@ -5,8 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import br.edu.ifsp.listadecontatos.R
-import br.edu.ifsp.listadecontatos.databinding.ContactItemLayoutBinding
+import br.edu.ifsp.dmo.listadecontatos.R
+import br.edu.ifsp.dmo.listadecontatos.databinding.ContactItemLayoutBinding
 import br.edu.ifsp.listadecontatos.model.Contact
 
 class ListContactAdapter(context: Context, data: List<Contact>) :

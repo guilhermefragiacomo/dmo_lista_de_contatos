@@ -9,6 +9,8 @@ object ContactDao {
         dataset.add(Contact(contact.name, contact.phone))
     }
     fun findAll(): List<Contact> {
-        return ArrayList<Contact>(dataset)
+        var ar = ArrayList<Contact>(dataset);
+        ar.sortByDescending { r -> r.name }
+        return ar;
     }
 }
