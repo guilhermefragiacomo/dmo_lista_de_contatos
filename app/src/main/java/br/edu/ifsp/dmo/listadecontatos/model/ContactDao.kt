@@ -10,7 +10,8 @@ object ContactDao {
     }
     fun findAll(): List<Contact> {
         var ar = ArrayList<Contact>(dataset);
-        ar.sortByDescending { r -> r.name }
-        return ar;
+        ar.sortedBy { r -> r.name }
+        System.out.println(ar);
+        return ar.sortedBy {r -> r.name};
     }
 }
